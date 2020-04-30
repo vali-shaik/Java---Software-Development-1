@@ -1,0 +1,10 @@
+#!/bin/bash
+
+mkdir $1
+mv *$1\ * $1
+cd $1
+cp ../../DataChangeUI.java  .
+mv *DataT* DataTransformer.java
+javac DataChangeUI.java
+../../do_tests 
+

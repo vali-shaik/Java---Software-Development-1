@@ -1,0 +1,38 @@
+Null object provided to read as file name
+Empty string as file name
+File does not exist
+File with no lines in it
+File with just column row
+File with one row of data, two columns
+File with several rows of integer data, two columns
+One column with integers (read and print)
+Ten columns of intgers (read and print)
+Two columns of strings with the data fitting 80 characters (read, print)
+Load data into an object that already has data in it
+Clear on an empty object
+Clear on an object with data (read, clear, print)
+Clear on an object with columns but no data (read, clear, print)
+Clear on an object twice
+New column with empty column name
+New column with null column name
+New column with no loaded data (new, print)
+New column with one column defined (read, new, print)
+New column with nine columns defined (read, new, print)
+New column with ten columns defined (read, new, print)
+New column with column names that exist
+Calculate with null string
+Calculate with empty string
+Calculate on empty object
+Calculate on object with columsn but no data
+Calculate on a single row of data
+Calculate on many rows of data
+Calculate on a new column using data from a current column
+Calculate on an equation with no = sign
+Calculate on binary expressions (many test rolled into one test case)
+Calculate on each kind of operator
+Print / write with no columns set
+Print / write with 2 columns (5 rows)
+Print / write with 2 columns (6 rows)
+Print / write with 11 columns (1 rows)
+Print / write with 10 columns (1 rows)
+

@@ -1,0 +1,87 @@
+Generic file processing (read, write):
+• Null as the file name -- 1
+• Empty file name -- 2
+• File name that doesn’t exist -- 3
+• File with no lines in it -- 4
+• File with column titles only in it -- 5
+• File with 1 line of data (plus column titles) in it -- 6
+• File with many lines (so a middle line) -- 7
+
+Specific file processing (read, write):
+- File with 1 column of data -- 8,
+- File with 2 columns of data -- 6, 
+- File with 10 columns of data -- 9,
+- File with data lines below 80 characters -- 6, 
+- File with data lines at 80 characters -- 10,
+- File with one column name being 80 characters (just one column in the file)
+- File with a string column -- 10,
+- File with an integer column -- 6, 
+- Load data into a new object -- 6
+- Load data into an object that already has data in it -- 11
+
+Clear:
+- Invoke on a new object, even before any data has been loaded -- 12
+- Invoke on an object with data in it -- 13
+- Invoke on an object with columns defined but no rows of data -- 14
+- Invoke on an object twice in a row (i.e. on an already-cleared object) -- 15
+
+newColumn:
+- Invoke with an empty string -- 16
+- Invoke with a null for the string -- 17
+- Invoke on a new object, before any data has been loaded -- 18
+- Invoke on an object that has 1 column defined -- 19
+- Invoke on an object with 9 columns defined -- 20
+- Invoke on an object with 10 columns defined -- 21
+- Invoke with a column name all lower case -- 20
+- Invoke with a column name all upper case -- 19
+- Invoke with a new column name -- 20
+- Invoke with a column name that already exists (same upper/lower case) -- 22
+- Invoke with a column name that already exists (different upper/lower case) -- 22
+- Invoke with a column name that includes one or more spaces -- ignore from assumptions
+
+Calculate:
+- Invoke with an empty string -- 23
+- Invoke with a null for the string -- 24
+- Invoke with an object with no data loaded -- 25
+- Invoke with an object with one column defined and no data rows -- 26
+- Invoke with an object with one column defined and 1 row of data -- 27
+- Invoke with an object defined with one column defined a many rows of data -- ignore for now
+- Invoke with an object with several columns defined (changing the number of rows of data) -- 28
+- Invoke to store in a column that was created from the file contents -- 28
+- Invoke to store in a column that was created with newColumn -- 29
+- Invoke with an equation that has no = sign == 30
+- Invoke with an equation of the form “a = b” where
+  o “a” is an existing column name and “b” is a positive integer -- 27
+  o “a” is an existing column name and “b” is a negative integer -- 28
+  o “a” is an existing column name and “b” is an existing column name -- 29
+  o “a” is an existing column name and “b” is a column name that doesn’t exist -- 30
+  o “a” is a column name that doesn’t exist -- 30
+- Invoke with an equation of the form “a = b c d” (“c” as an operator) where
+  o “a” is an existing column name, “b” and “d” are integers, and “c” is one of the operators +, -, *, and / -- 32
+  o “a” is an existing column name, “b” is an integer, “d” is an existing column name, and “c” is one of the operators +, -, *, and / -- 31
+  o “a” is an existing column name, “b” is an integer, “d” is a column name that doesn’t exist, and “c” is one of the operators +, -, *, and / -- 31
+  o “a” is an existing column name, “d” is an integer, “b” is an existing column name, and “c” is one of the operators +, -, *, and / -- 31
+  o “a” is an existing column name, “d” is an integer, “b” is a column name that doesn’t exist, and “c” is one of the operators +, -, *, and / -- 31
+  o “a” is an existing column name, “b” and “d” are existing column names, and “c” is one of the operators +, -, *, and / -- 31
+  o A valid equation except for having “c” as an unrecognized operator, like % -- 32
+  o A valid equation with “b” as a negative integer -- ignore
+  o A valid equation with “d” as a negative integer -- ignore
+  o A valid equation with a division by 0 -- ignore (from assumptions)
+  o A valid equation where “a” and one of “b” and “d” is the same column name as “a” -- 32
+  o Invoke with a valid formula and a varying number of spaces between elements -- 31
+  o Invoke with a valid formula that uses a string column
+- Invoke with a formulate that rounds up for one row and rounds down for another. -- 32
+
+Printing (top, print, and write):
+- Print an object with no columns -- 33
+- Print an object with 1 column of data -- 8
+- Print an object with 2 columns of data -- 34
+- Print an object with 1 row of data -- 37
+- Print an object with 5 rows of data -- 34
+- Print an object with 6 or more rows of data -- 36
+- Print an object with a “newColumn” column that has not been assigned data to it -- ignore
+
+Writing:
+- Write an object with 10 columns of data -- 37
+- Write an object with 11 columns of data -- 36
+
