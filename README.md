@@ -122,9 +122,9 @@ Collection Framework.
 • If in doubt for testing, I will be running your program on bluenose.cs.dal.ca. Correct
 operation of your program shouldn’t rely on any packages that aren’t available on that
 system.
+
 Notes
-- You will be provided with a “main” class on the course brightspace page by Monday
-morning that will give you an interface through which to invoke your class.
+=======
 - You are permitted to create more than one class in support of your work.
 - I recommend thinking about how you want to store your data first. Consider some of
 the built-in data types that do not worry about the size of the data. Next, design, code,
