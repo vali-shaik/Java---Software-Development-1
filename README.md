@@ -115,13 +115,13 @@ column where row 1 has an integer in the column and row 2 has an integer in the
 column).
 • There will always be at least one space between each component of an equation.
 • Every line in an input file will have the same number of columns of data.
+
 Constraints
+===============
 • Write your solution in Java. You are allowed to use data structures from the Java
 Collection Framework.
 • Your program should treat all column names in equations as being case insensitive.
-• If in doubt for testing, I will be running your program on bluenose.cs.dal.ca. Correct
-operation of your program shouldn’t rely on any packages that aren’t available on that
-system.
+
 
 Notes
 =======
