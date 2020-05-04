@@ -2,19 +2,6 @@
 
 Java program to decomposing a problem, creating a design for a program, and implementing and testing a program.
 
-Background
-==============
-Matrices of data appear commonly in data analysis tasks. Each row represents some
-experiment or individual and the columns represent attributes or data that we are gathering
-about the experiment or individual. Often, we want to apply some transformations to the data
-in the columns of the matrix before we start our analyses.
-The ability to interact with the data as we transform it and to see the changes allows an
-experimenter to guide the data transformations and to ensure that the outcomes are what is
-expected. Today, we might use a statistical analysis software package or a spreadsheet to make
-these transformations.
-
-
-
 Problem
 ==============
 Write a class that stores a matrix of data and can have a set of operations invoked on the data.
@@ -100,45 +87,3 @@ bottled water 5 3 15 2 17
 bread 2 5 10 2 12
 rice 3 3 9 1 10
 
-Assumptions
-==============
-You may assume that
-• The input file will have at most 10 columns.
-• File names will contain the full path to the file, including any file name extensions.
-• No line in the file is more than 80 characters.
-• Column names will be a single alphabetic string. They will not have any spaces or nonletter
-characters.
-• The user will not ask you to make a calculation that divides by 0.
-• String columns will only contain alphabetic characters.
-• Data in a column in a data file will always have the same data type (you won’t get a
-column where row 1 has an integer in the column and row 2 has an integer in the
-column).
-• There will always be at least one space between each component of an equation.
-• Every line in an input file will have the same number of columns of data.
-
-Constraints
-===============
-• Write your solution in Java. You are allowed to use data structures from the Java
-Collection Framework.
-• Your program should treat all column names in equations as being case insensitive.
-
-
-Notes
-=======
-- You are permitted to create more than one class in support of your work.
-- I recommend thinking about how you want to store your data first. Consider some of
-the built-in data types that do not worry about the size of the data. Next, design, code,
-and test functionality one method at a time. Do the “calculate” method last.
-- Use your design notes to begin the external and internal documentation for your
-program.
-- Review the “lessons learned” slides from the course notes.
-- Your methods will be invoked with error conditions. You are expected to handle these
-errors.
-- Review the test cases to identify special cases that you will want to consider in your
-work.
-- Your class should never end by producing a Java error stack trace.
-- The marking scheme has no marks for time or space efficiency.
-- Use the number of marks for the methods and the set of test cases as guides for how
-much time to devote to each method.
-- Recognize when you are spending time with no progress and ask for help before you
-find yourself spending hours with no progress to show for the time.
